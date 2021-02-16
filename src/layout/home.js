@@ -1,70 +1,52 @@
+// import { container } from "webpack";
 
-const headerLayout = () => {
-    const head = () => {
-        const navClasses = 'navbar navbar-expand-lg navbar-light bg-light'.split(' ',)
-        const navCollapseClasses = 'collapse navbar-collapse'.split(' ',);
-        const ulClasses = 'navbar-nav ml-auto'.split(' ',);
+
+const home = () => {
+    const sectionTop = () => {
+        const section = document.createElement('section');
+        const itemHome = document.createElement('div');
+        const containerHome = document.createElement('div');
+        const headerContent = document.createElement('div');
+        const headerHome = document.createElement('h1');
+        const paraHome = document.createElement('p');
+
+        section.classList.add('section-one');
         
-       
+        itemHome.classList.add('item');
+        containerHome.classList.add('container');
+        headerContent.classList.add('header-content');
+        headerHome.classList.add('header-title');
 
-        const header = document.createElement('header');
-        const nav = document.createElement('nav');
-        const navContainer = document.createElement('div');
-        const navCollapse = document.createElement('div');
-        const ul = document.createElement('ul');
-
-        const liHome = document.createElement('li');
-        const liMenu = document.createElement('li');
-        const liContact = document.createElement('li');
-
-        const anchorHome = document.createElement('a');
-        const anchorMenu = document.createElement('a');
-        const anchorContact = document.createElement('a');
-        
-        header.classList.add = ('top-navbar');
-        nav.classList.add(...navClasses);
-        navContainer.classList.add('container');
-        navCollapse.classList.add(...navCollapseClasses);
-        navContainer.appendChild(navCollapse);
-        ul.classList.add(...ulClasses);
-        liHome.classList.add('nav-item');
-        liMenu.classList.add('nav-item');
-        liContact.classList.add('nav-item');
-
-        anchorHome.classList.add('nav-link')
-        anchorMenu.classList.add('nav-link');
-        anchorContact.classList.add('nav-link')
-
-        anchorHome.textContent = 'Home'
-        anchorMenu.textContent = 'Menu';
-        anchorContact.textContent = 'Contact'
-
-        anchorHome.setAttribute('id','home');
-
-        liHome.appendChild(anchorHome);
-        liMenu.appendChild(anchorMenu)
-        liContact.appendChild(anchorContact)
-
-        ul.appendChild(liHome);
-        ul.appendChild(liMenu);
-        ul.appendChild(liContact);
-
-        navCollapse.appendChild(ul);
-        nav.appendChild(navContainer);
-        header.appendChild(nav);
-
-        document.getElementById('content').appendChild(header);
-    } 
-
-    const homeContent =()=>{
-        const contents = document.createElement('div');
-        contents.classList.add('container');
-        document.getElementById('content').appendChild(contents);
+        headerHome.innerText = 'BEST FOOD';
+        paraHome.classList.add('header-sub-title');
+        paraHome.innerText = 'create your own slogan'
+        // containerHome.appendChild(headerContent);
+        headerContent.appendChild(headerHome)
+        headerContent.appendChild(paraHome);
+        containerHome.appendChild(headerContent);
+        itemHome.appendChild(containerHome)
+        section.appendChild(itemHome)
+        content.appendChild(section);
     }
 
-    return { head }
+    const sectionSecond = ()=> {
+        const imgClasses = 'mg-responsive section-icon hidden-sm hidden-xs'.split(' ',)
+        const sectionSec = document.createElement('section');
+        const wrapper = document.createElement('div')
+        wrapper.classList.add('wrapper');
+        const containerSecSection = document.createElement('div');
+        containerSecSection.classList.add('container-fluid');
+        wrapper.appendChild(containerSecSection);
+        
+        
+        const imgSection = document.createElement('img');
+        imgSection.classList.add(...imgClasses);
+        sectionSec.appendChild(imgSection)
+        sectionSec.appendChild(wrapper)
+        content.appendChild(sectionSec);
+    }
+
+    return {sectionTop, sectionSecond}
 }
 
-
-
-export default headerLayout
+export default home;

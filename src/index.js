@@ -1,8 +1,12 @@
-import headerLayout from './layout/home'
+import headerLayout from './layout/header'
+import home from './layout/home'
 
-const home = headerLayout();
+const headInit = headerLayout();
+const homeInit = home()
 
-home.head();
+headInit.head();
+homeInit.sectionTop();
+homeInit.sectionSecond();
 
 // home.homeContent();
 
