@@ -66,7 +66,43 @@ const home = () => {
     document.getElementById('content').appendChild(sectionSec);
   };
 
-  return { sectionTop, sectionSecond };
+  const sectionPricing = () => {
+    const pricingColClasses = 'col-md-10 col-md-offset-1'.split(' ');
+    const sectionP = document.createElement('section');
+    sectionP.classList.add('pricing');
+    sectionP.setAttribute('id', 'pricing');
+    const w = document.createElement('div');
+    w.classList.add('w');
+    const pricingFilter = document.createElement('div');
+    pricingFilter.classList.add('pricing-filter');
+    const pFilterWrapper = document.createElement('div');
+    pFilterWrapper.classList.add('pricing-filter-wrapper');
+    const sectionContainer = document.createElement('div');
+    sectionContainer.classList.add('container');
+    const pricingRow = document.createElement('div');
+    pricingRow.classList.add('row');
+    const pricingCol = document.createElement('div');
+    pricingCol.classList.add(...pricingColClasses);
+    const secHeader = document.createElement('div');
+    secHeader.classList.add('section-header');
+    const headerTwo = document.createElement('h2');
+    headerTwo.classList.add('pricing-title');
+    const items = document.createElement('ul');
+    
+    items.classList.add('clearfix');
+   
+    for(let itemList = 0; itemList < 8; itemList++) {
+      itemList = document.createElement('li');
+      itemList.classList.add('filter');
+      items.appendChild(itemList);
+      sectionP.appendChild(items);
+    }
+    
+    document.getElementById('content').appendChild(sectionP);
+  };
+
+
+  return { sectionTop, sectionSecond, sectionPricing };
 };
 
 export default home;
