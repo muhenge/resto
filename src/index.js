@@ -7,4 +7,4 @@ const homeInit = home();
 headInit.head();
 homeInit.sectionTop();
 homeInit.sectionSecond();
-homeInit.sectionPricing();
+homeInit.sectionPlace();

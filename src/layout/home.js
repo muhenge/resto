@@ -66,43 +66,38 @@ const home = () => {
     document.getElementById('content').appendChild(sectionSec);
   };
 
-  const sectionPricing = () => {
-    const pricingColClasses = 'col-md-10 col-md-offset-1'.split(' ');
+  const sectionPlace = () => {
+    const placeColBgClasses = 'col-xs-6 col-sm-6 dis-table-cell section-bg'.split(' ');
+    const placeColClasses = 'col-xs-6 col-sm-6 dis-table-cell color-bg'.split(' ');
+    const imgPlaceClasses = 'img-responsive section-icon hidden-sm hidden-xs'.split(' ');
     const sectionP = document.createElement('section');
-    sectionP.classList.add('pricing');
-    sectionP.setAttribute('id', 'pricing');
-    const w = document.createElement('div');
-    w.classList.add('w');
-    const pricingFilter = document.createElement('div');
-    pricingFilter.classList.add('pricing-filter');
-    const pFilterWrapper = document.createElement('div');
-    pFilterWrapper.classList.add('pricing-filter-wrapper');
-    const sectionContainer = document.createElement('div');
-    sectionContainer.classList.add('container');
-    const pricingRow = document.createElement('div');
-    pricingRow.classList.add('row');
-    const pricingCol = document.createElement('div');
-    pricingCol.classList.add(...pricingColClasses);
-    const secHeader = document.createElement('div');
-    secHeader.classList.add('section-header');
-    const headerTwo = document.createElement('h2');
-    headerTwo.classList.add('pricing-title');
-    const items = document.createElement('ul');
-    
-    items.classList.add('clearfix');
-   
-    for(let itemList = 0; itemList < 8; itemList++) {
-      itemList = document.createElement('li');
-      itemList.classList.add('filter');
-      items.appendChild(itemList);
-      sectionP.appendChild(items);
-    }
-    
+    sectionP.classList.add('great-place-to-enjoy');
+    sectionP.setAttribute('id', 'great-place-to-enjoy');
+    const imgPlace = document.createElement('img');
+    imgPlace.setAttribute('src', '');
+    imgPlace.classList.add(...imgPlaceClasses);
+    const placeContainer = document.createElement('div');
+    placeContainer.classList.add('container-fluid');
+    const placeRow = document.createElement('div');
+    const placeCol = document.createElement('div');
+    placeCol.classList.add(...placeColClasses);
+    placeRow.appendChild(placeCol);
+    const headerPlace = document.createElement('h2');
+    headerPlace.classList.add('section-title');
+    headerPlace.innerText = 'Great Place to enjoy';
+    placeCol.appendChild(headerPlace);
+    const placeColBg = document.createElement('div');
+    placeColBg.classList.add(...placeColBgClasses);
+    placeRow.appendChild(placeColBg);
+    placeRow.classList.add('row', 'dis-table');
+    placeContainer.appendChild(placeRow);
+    sectionP.appendChild(imgPlace);
+    sectionP.appendChild(placeContainer);
     document.getElementById('content').appendChild(sectionP);
   };
 
 
-  return { sectionTop, sectionSecond, sectionPricing };
+  return { sectionTop, sectionSecond, sectionPlace };
 };
 
 export default home;
