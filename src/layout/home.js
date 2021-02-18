@@ -9,16 +9,16 @@ const home = () => {
     const headerHome = document.createElement('h1');
     const paraHome = document.createElement('p');
 
-    section.classList.add('section-one');
-
+    section.classList.add('owl-carousel');
+    section.setAttribute('id', 'header-slider');
     itemHome.classList.add('item');
     containerHome.classList.add('container');
     headerContent.classList.add('header-content');
     headerHome.classList.add('header-title');
 
-    headerHome.innerText = 'BEST FOOD';
+    headerHome.innerText = 'WELCOME';
     paraHome.classList.add('header-sub-title');
-    paraHome.innerText = 'create your own slogan';
+    paraHome.innerText = 'find the best food';
     headerContent.appendChild(headerHome);
     headerContent.appendChild(paraHome);
     containerHome.appendChild(headerContent);
@@ -28,7 +28,7 @@ const home = () => {
   };
 
   const sectionSecond = () => {
-    const imgClasses = 'mg-responsive section-icon hidden-sm hidden-xs'.split(' ');
+    const imgClasses = 'img-responsive section-icon hidden-sm hidden-xs'.split(' ');
     const rowTableClasses = 'row dis-table'.split(' ');
     const hiddenClasses = 'hidden-xs col-sm-6 section-bg about-bg dis-table-cell'.split(' ');
     const textTableClasses = 'col-xs-12 col-sm-6 dis-table-cell'.split(' ');
@@ -41,8 +41,13 @@ const home = () => {
     const textTable = document.createElement('div');
     const textContainer = document.createElement('div');
     const headerContainer = document.createElement('h2');
+    const paraOne = document.createElement('p');
+    const paraTwo = document.createElement('p');
+    paraOne.classList.add('section-content-para');
+    paraTwo.classList.add('section-content-para');
+    paraOne.innerText = 'Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.';
     headerContainer.classList.add('section-content-title');
-    headerContainer.innerText = 'Awesome Foods';
+    headerContainer.innerText = 'About';
     textContainer.classList.add('section-content');
     textTable.classList.add(...textTableClasses);
 
@@ -55,7 +60,10 @@ const home = () => {
     rowTable.appendChild(hidden);
     rowTable.appendChild(textTable);
     textTable.appendChild(textContainer);
+
     textContainer.appendChild(headerContainer);
+    textContainer.appendChild(paraOne);
+    textContainer.appendChild(paraTwo);
     containerSecSection.appendChild(rowTable);
     wrapper.appendChild(containerSecSection);
 
@@ -74,7 +82,7 @@ const home = () => {
     sectionP.classList.add('great-place-to-enjoy');
     sectionP.setAttribute('id', 'great-place-to-enjoy');
     const imgPlace = document.createElement('img');
-    imgPlace.setAttribute('src', '');
+    imgPlace.setAttribute('src', 'images/icons/beer_black.png');
     imgPlace.classList.add(...imgPlaceClasses);
     const placeContainer = document.createElement('div');
     placeContainer.classList.add('container-fluid');
@@ -95,8 +103,6 @@ const home = () => {
     sectionP.appendChild(placeContainer);
     document.getElementById('content').appendChild(sectionP);
   };
-
-
   return { sectionTop, sectionSecond, sectionPlace };
 };
 

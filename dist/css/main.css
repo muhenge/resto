@@ -111,6 +111,13 @@ body
 
 }
 
+section.owl-carousel {
+	background-image: url(../images/2.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
 .btn-reservation {
 	width: 100%;
 	margin: 0px;
@@ -155,7 +162,7 @@ body
 	display: table-cell;
 	padding: 0;
 	float: none;
-	/*width: 50vw;*/
+	width: 50vw;
 	/*position: relative;*/
 }
 .color-bg
@@ -384,8 +391,8 @@ nav.shrink .navbar-toggle {
 	background: url('../images/About-C-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: 85%;
-  	background-position-x: 15%;
-  	background-position-y: 80%;
+  	/* background-position-x: 15%;
+  	background-position-y: 80%; */
 }
 #about 
 {
@@ -582,39 +589,7 @@ nav.shrink .navbar-toggle {
 		 -o-transition: all 0.3s ease-in-out;
 }
 
-.fb
-{
-	background: url(../images/social/facebook_color.png);
-}
 
-.fb:hover
-{
-	background: url(../images/social/facebook_black.png);
-}
-
-.twit {
-	background: url(../images/social/twitter_color.png);
-}
-
-.twit:hover {
-	background: url(../images/social/twitter_black.png);
-}
-
-.g-plus {
-	background: url(../images/social/g-plus_color.png);
-}
-
-.g-plus:hover {
-	background: url(../images/social/g-plus_black.png);
-}
-
-.link {
-	background: url(../images/social/linkedin_color.png);
-}
-
-.link:hover {
-	background: url(../images/social/linkedin_black.png);
-}
 
 #map-canvas {
     width: 100%;
@@ -672,7 +647,7 @@ footer a:hover
 	}
 	.owl-carousel
 	{
-		margin-top: 94px;
+		margin-top: 0;
 	}
 }
 
