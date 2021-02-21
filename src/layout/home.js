@@ -1,6 +1,8 @@
-// import { container } from 'webpack';
 
 const home = () => {
+  const main = document.createElement('main');
+  main.setAttribute('id','main-id');
+
   const sectionTop = () => {
     const section = document.createElement('section');
     const itemHome = document.createElement('div');
@@ -24,7 +26,8 @@ const home = () => {
     containerHome.appendChild(headerContent);
     itemHome.appendChild(containerHome);
     section.appendChild(itemHome);
-    document.getElementById('content').appendChild(section);
+    document.getElementById('content').appendChild(main);
+    main.appendChild(section);
   };
 
   const sectionSecond = () => {
@@ -71,7 +74,8 @@ const home = () => {
     imgSection.classList.add(...imgClasses);
     sectionSec.appendChild(imgSection);
     sectionSec.appendChild(wrapper);
-    document.getElementById('content').appendChild(sectionSec);
+    document.getElementById('content').appendChild(main);
+    main.appendChild(sectionSec);
   };
 
   const sectionPlace = () => {
@@ -101,7 +105,9 @@ const home = () => {
     placeContainer.appendChild(placeRow);
     sectionP.appendChild(imgPlace);
     sectionP.appendChild(placeContainer);
-    document.getElementById('content').appendChild(sectionP);
+
+    document.getElementById('content').appendChild(main);
+    main.appendChild(sectionP);
   };
   return { sectionTop, sectionSecond, sectionPlace };
 };
