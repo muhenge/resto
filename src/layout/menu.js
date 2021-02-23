@@ -1,11 +1,12 @@
 
 const menu = () => {
-  const elt = document.createElement('section');
-  elt.classList.add('section-menu');
-  elt.textContent = "hello there!"
-  const main = document.getElementById('main-id');
-  main.appendChild(elt);
-  document.getElementById('content').appendChild(main);
+  const mainMenu = document.createElement('main');
+  mainMenu.setAttribute('id','main-menu');
+  const content = document.getElementById('content');
+  content.appendChild(mainMenu);
+  const div = document.createElement('div');
+  div.classList.add('menu-div');
+  mainMenu.appendChild(div);
 };
 
 export default menu;

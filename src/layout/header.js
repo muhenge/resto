@@ -1,9 +1,7 @@
-
-
 const content = document.getElementById('content');
-
+content.classList.add('my-tabs');
 const headerLayout = () => {
-  const navClasses = 'navbar navbar-expand-lg navbar-light bg-light'.split(' ');
+  const navClasses = 'navbar navbar-expand-lg navbar-light bg-light tabs'.split(' ');
   const navCollapseClasses = 'collapse navbar-collapse'.split(' ');
   const ulClasses = 'navbar-nav ml-auto'.split(' ');
 
