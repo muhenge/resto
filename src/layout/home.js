@@ -1,7 +1,6 @@
-
 const home = () => {
   const main = document.createElement('main');
-  main.setAttribute('id','main-id');
+  main.setAttribute('id', 'main-id');
 
   const sectionTop = () => {
     const section = document.createElement('section');
@@ -31,9 +30,13 @@ const home = () => {
   };
 
   const sectionSecond = () => {
-    const imgClasses = 'img-responsive section-icon hidden-sm hidden-xs'.split(' ');
+    const imgClasses = 'img-responsive section-icon hidden-sm hidden-xs'.split(
+      ' ',
+    );
     const rowTableClasses = 'row dis-table'.split(' ');
-    const hiddenClasses = 'hidden-xs col-sm-6 section-bg about-bg dis-table-cell'.split(' ');
+    const hiddenClasses = 'hidden-xs col-sm-6 section-bg about-bg dis-table-cell'.split(
+      ' ',
+    );
     const textTableClasses = 'col-xs-12 col-sm-6 dis-table-cell'.split(' ');
     const sectionSec = document.createElement('section');
     sectionSec.classList.add('about');
@@ -79,9 +82,15 @@ const home = () => {
   };
 
   const sectionPlace = () => {
-    const placeColBgClasses = 'col-xs-6 col-sm-6 dis-table-cell section-bg'.split(' ');
-    const placeColClasses = 'col-xs-6 col-sm-6 dis-table-cell color-bg'.split(' ');
-    const imgPlaceClasses = 'img-responsive section-icon hidden-sm hidden-xs'.split(' ');
+    const placeColBgClasses = 'col-xs-6 col-sm-6 dis-table-cell section-bg'.split(
+      ' ',
+    );
+    const placeColClasses = 'col-xs-6 col-sm-6 dis-table-cell color-bg'.split(
+      ' ',
+    );
+    const imgPlaceClasses = 'img-responsive section-icon hidden-sm hidden-xs'.split(
+      ' ',
+    );
     const sectionP = document.createElement('section');
     sectionP.classList.add('great-place-to-enjoy');
     sectionP.setAttribute('id', 'great-place-to-enjoy');
