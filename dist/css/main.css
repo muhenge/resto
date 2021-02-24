@@ -56,20 +56,15 @@ section.owl-carousel {
 .section-content {
   padding: 15% 25% 15% 20%;
 }
-/*.custom-row
-{
-	width: 100vw;
-}*/
+
 .dis-table {
   display: table;
-  /*width: 100vw;*/
 }
 .dis-table .dis-table-cell {
   display: table-cell;
   padding: 0;
   float: none;
   width: 50vw;
-  /*position: relative;*/
 }
 
 .none {
