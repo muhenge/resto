@@ -7,7 +7,7 @@ const menu = () => {
   content.appendChild(mainMenu);
 
   const galleryContainer = document.createElement('div');
-  galleryContainer.classList.add('container-fluid','tz-gallery');
+  galleryContainer.classList.add('container-fluid', 'tz-gallery');
 
   const row = document.createElement('div');
   row.classList.add('row');
