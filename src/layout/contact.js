@@ -1,6 +1,6 @@
 const contactForm = () => {
   const mainContact = document.createElement('main');
-  mainContact.setAttribute('id', 'main-contact')
+  mainContact.setAttribute('id', 'main-contact');
   mainContact.classList.add('main-contact');
   const section = document.createElement('section');
   section.classList.add('contact-form', 'menu-div');

@@ -1,4 +1,3 @@
-
 body {
   font-family: "Raleway", "Open-Sans", sans-serif;
   overflow-x: hidden;
@@ -611,7 +610,6 @@ footer a:hover {
     margin-top: 80px;
   }
 
-
   .owl-carousel .owl-wrapper,
   .owl-carousel .owl-item:nth-child(1) .item,
   .owl-carousel .owl-wrapper,
@@ -713,5 +711,4 @@ footer a:hover {
   .g-map img {
     height: 137px;
   }
-
 }
