@@ -34,7 +34,7 @@
 
 👤 **Ngenzi Herve**
 
-- Website [azizali.ml](https://ngenziherve.me/)
+- Website [ngenziherve](https://ngenziherve.me/)
 - Github: [@muhenge](https://github.com/muhenge)
 - Linkedin: [linkedin](https://www.linkedin.com/in/mugunga-herve-a62a0ab9/)
 
