@@ -1,70 +1,41 @@
 
 const menu = () => {
-  const rowInColRowClasses = 'col-md-3 col-sm-6 col-xs-12'.split(' ');
-  const colClasses = 'col-md-10 col-md-offset-1 col-sm-9 col-sm-offset-2 col-xs-12'.split(' ');
+  const colClasses = 'col-sm-12 col-md-4 col-lg-4'.split(' ');
   const mainMenu = document.createElement('main');
   mainMenu.setAttribute('id', 'main-menu');
   const content = document.getElementById('content');
   content.appendChild(mainMenu);
-  const sectionMenu = document.createElement('section');
-  sectionMenu.classList.add('menu-list');
-  const containerMenu = document.createElement('div');
-  containerMenu.classList.add('container', 'full-height');
+
+  const galleryContainer = document.createElement('div');
+  galleryContainer.classList.add('container-fluid','tz-gallery');
+
   const row = document.createElement('div');
-  row.classList.add('row', 'menu');
-  containerMenu.appendChild(row);
+  row.classList.add('row');
+  galleryContainer.appendChild(row);
   const col = document.createElement('div');
   col.classList.add(...colClasses);
-  row.appendChild(col);
-  const rowInCol = document.createElement('div');
-  rowInCol.classList.add('row');
-  col.appendChild(rowInCol);
-  const rowInColRow = document.createElement('div');
-  const rowInColRowOne = document.createElement('div');
-  rowInColRowOne.classList.add(...rowInColRowClasses);
-  const rowInColRowTwo = document.createElement('div');
-  rowInColRowTwo.classList.add(...rowInColRowClasses);
-  const rowInColRowThree = document.createElement('div');
-  rowInColRowThree.classList.add(...rowInColRowClasses);
-  const rowInColRowFour = document.createElement('div');
-  rowInColRowFour.classList.add(...rowInColRowClasses);
-  const rowInColRowFive = document.createElement('div');
-  rowInColRowFive.classList.add(...rowInColRowClasses);
-  const rowInColRowSix = document.createElement('div');
-  rowInColRowSix.classList.add(...rowInColRowClasses);
-  rowInColRow.classList.add(...rowInColRowClasses);
-  // eslint-disable-next-line max-len
-  rowInCol.append(rowInColRow, rowInColRowOne, rowInColRowTwo, rowInColRowThree, rowInColRowFour, rowInColRowFive, rowInColRowSix);
-  const item = document.createElement('div');
-  const itemOne = document.createElement('div');
-  const itemTwo = document.createElement('div');
-  item.classList.add('row');
-  itemOne.classList.add('row');
-  itemTwo.classList.add('row');
-  rowInColRowTwo.appendChild(itemTwo);
-  rowInColRowOne.appendChild(itemOne);
-  rowInColRow.appendChild(item);
-  const cat = document.createElement('div');
-  cat.classList.add('menu-category');
-  const catOne = document.createElement('div');
-  catOne.classList.add('menu-category');
-  const catTwo = document.createElement('div');
-  catTwo.classList.add('menu-category');
-  item.appendChild(cat);
-  itemOne.appendChild(catOne);
-  itemTwo.appendChild(catTwo);
-  const h2 = document.createElement('h2');
-  const hOne = document.createElement('h2');
-  const hTwo = document.createElement('h2');
-  h2.innerText = 'Bread';
-  hOne.innerText = 'Dessert';
-  hTwo.innerText = 'Main course';
-  cat.appendChild(h2);
-  catOne.appendChild(hOne);
-  catTwo.appendChild(hTwo);
-  sectionMenu.appendChild(containerMenu);
 
-  mainMenu.appendChild(sectionMenu);
+  const image = document.createElement('img');
+  image.classList.add('img-fluid');
+
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i <= 8; i++) {
+    row.appendChild(col.cloneNode(true));
+    col.appendChild(image);
+  }
+
+  const f = row.firstChild;
+  f.appendChild(image);
+  row.children[0].firstChild.setAttribute('src', './images/food7.jpg');
+  row.children[1].firstChild.setAttribute('src', './images/food1.jpg');
+  row.children[2].firstChild.setAttribute('src', './images/food2.jpg');
+  row.children[3].firstChild.setAttribute('src', './images/food3.jpg');
+  row.children[4].firstChild.setAttribute('src', './images/food4.jpg');
+  row.children[5].firstChild.setAttribute('src', './images/food5.jpg');
+  row.children[6].firstChild.setAttribute('src', './images/food6.jpg');
+  row.children[7].firstChild.setAttribute('src', './images/food7.jpg');
+  row.children[8].firstChild.setAttribute('src', './images/food8.jpg');
+  mainMenu.appendChild(galleryContainer);
 };
 
 export default menu;

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", "Open-Sans", sans-serif;
   overflow-x: hidden;
@@ -14,6 +18,10 @@ section.owl-carousel {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+.tz-gallery {
+  margin-top: 100px;
 }
 
 .btn-reservation {

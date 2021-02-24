@@ -54,11 +54,12 @@ const fun = (e) => {
     default:
       document.removeEventListener('click');
       document.getElementById('main-id').classList.add('d-block');
-      document.getElementById('main-menu').classList.add('d-none');
-      document.getElementById('main-contact').classList.add('d-none');
   }
 
   e.stopPropagation();
 };
+
+document.getElementById('main-menu').classList.add('d-none');
+document.getElementById('main-contact').classList.add('d-none');
 
 document.addEventListener('click', fun, false);

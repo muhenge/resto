@@ -36,7 +36,7 @@ const headerLayout = () => {
   anchorContact.classList.add('nav-link', 'cursor');
   anchorContact.setAttribute('id', 'contact');
   anchorHome.textContent = 'Home';
-  anchorMenu.textContent = 'Menu';
+  anchorMenu.textContent = 'Galleries';
   anchorContact.textContent = 'Contact';
 
   anchorHome.setAttribute('id', 'home');
