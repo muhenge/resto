@@ -9,7 +9,7 @@ const menu = () => {
   const sectionMenu = document.createElement('section');
   sectionMenu.classList.add('menu-list');
   const containerMenu = document.createElement('div');
-  containerMenu.classList.add('container');
+  containerMenu.classList.add('container', 'full-height');
   const row = document.createElement('div');
   row.classList.add('row', 'menu');
   containerMenu.appendChild(row);
@@ -48,11 +48,20 @@ const menu = () => {
   cat.classList.add('menu-category');
   const catOne = document.createElement('div');
   catOne.classList.add('menu-category');
+  const catTwo = document.createElement('div');
+  catTwo.classList.add('menu-category');
   item.appendChild(cat);
   itemOne.appendChild(catOne);
+  itemTwo.appendChild(catTwo);
   const h2 = document.createElement('h2');
+  const hOne = document.createElement('h2');
+  const hTwo = document.createElement('h2');
   h2.innerText = 'Bread';
+  hOne.innerText = 'Dessert';
+  hTwo.innerText = 'Main course';
   cat.appendChild(h2);
+  catOne.appendChild(hOne);
+  catTwo.appendChild(hTwo);
   sectionMenu.appendChild(containerMenu);
 
   mainMenu.appendChild(sectionMenu);

@@ -1,7 +1,7 @@
 const content = document.getElementById('content');
 content.classList.add('my-tabs');
 const headerLayout = () => {
-  const navClasses = 'navbar navbar-expand-lg navbar-light bg-light tabs'.split(' ');
+  const navClasses = 'navbar navbar-expand-lg navbar-light bg-light fixed-top'.split(' ');
   const navCollapseClasses = 'collapse navbar-collapse'.split(' ');
   const ulClasses = 'navbar-nav ml-auto'.split(' ');
 
@@ -25,15 +25,15 @@ const headerLayout = () => {
   navCollapse.classList.add(...navCollapseClasses);
   navContainer.appendChild(navCollapse);
   ul.classList.add(...ulClasses);
-  liHome.classList.add('nav-item');
-  liMenu.classList.add('nav-item');
-  liContact.classList.add('nav-item');
+  liHome.classList.add('nav-item', 'cursor');
+  liMenu.classList.add('nav-item', 'cursor');
+  liContact.classList.add('nav-item', 'cursor');
 
-  anchorHome.classList.add('nav-link');
+  anchorHome.classList.add('nav-link', 'cursor');
   anchorHome.setAttribute('id', 'home');
-  anchorMenu.classList.add('nav-link');
+  anchorMenu.classList.add('nav-link', 'cursor');
   anchorMenu.setAttribute('id', 'menu');
-  anchorContact.classList.add('nav-link');
+  anchorContact.classList.add('nav-link', 'cursor');
   anchorContact.setAttribute('id', 'contact');
   anchorHome.textContent = 'Home';
   anchorMenu.textContent = 'Menu';

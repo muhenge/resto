@@ -1,55 +1,4 @@
-/*=================================================
-||				Useful Links
-==================================================*/
-/*
-|||||||||	Slider	|||||||||
-|	http://www.jssor.com/demos/image-gallery.html
-|	http://www.jssor.com/development/index.html
-|	http://www.jssor.com/development/define-slides-html-code.html
-|	file:///G:/Technext/Helper/Jssor.Slider.FullPack/demos-no-jquery/introduction-slider.source.html
-|	file:///G:/Technext/Helper/Jssor.Slider.FullPack/demos-no-jquery/image-gallery.source.html
-|	http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
-|||||||||	Others	|||||||||
-|	Fonts: 1. Roboto[Section-title] 2. Open-Sans[body]
-|
-|
-*/
 
-/*=================================================
-||				Index 
-==================================================*/
-/*
-|	1. Imports
-|	2. Global
-|	3. Colors
-|
-|	=============
-|	SECTIONS
-|	=============
-|	4. Navigation
-|	5. Header
-|	6. About us
-|	7. Affordable pricing
-|	8. Great Place to enjoy
-|	9. Our Beer
-|	10. Our Breakfast Menu
-|	11. Our Bread
-|	12. Catagories-1
-|	13. Our Featured Dishes Menu
-|	14. Catagories-2
-|	15. Reserve A Table!
-|	16. Contact With us
-|	17. Footer
-*/
-
-/*=================================================
-||				1. Imports 
-==================================================*/
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,400);
-@import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
-/*=================================================
-||				2. Global 
-==================================================*/
 body {
   font-family: "Raleway", "Open-Sans", sans-serif;
   overflow-x: hidden;
@@ -59,57 +8,6 @@ body {
 .menu-div {
   background-color: rgb(206, 183, 183);
   height: 100vh;
-}
-
-.btn.active.focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn:active:focus,
-.btn:focus {
-  outline: none;
-}
-
-.btn {
-  border-radius: 0;
-  letter-spacing: 2px;
-}
-
-.btn:hover {
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-}
-
-.btn-middle {
-  background-color: transparent;
-  padding: 15px 30px;
-  border: 1px solid #8bc34a;
-  color: #5c9233;
-  margin: 25px 0px;
-}
-
-.btn-middle:hover {
-  background-color: #8bc34a;
-  color: #fff;
-  box-shadow: 0px 2px 5px #948e8e;
-}
-
-.btn-send,
-.btn-reservation {
-  background-color: #8bc34a;
-  padding: 10px 50px;
-  box-shadow: 0px 2px 5px #948e8e;
-  color: #fff;
-  margin: 20px 0px;
-}
-
-.btn-send:hover,
-.btn-reservation:hover {
-  background-color: #5c9233;
-  color: #eee;
 }
 
 section.owl-carousel {
@@ -122,6 +20,14 @@ section.owl-carousel {
 .btn-reservation {
   width: 100%;
   margin: 0px;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 .section-title {
@@ -198,16 +104,7 @@ textarea.empty {
   margin-top: 58px;
   z-index: 999;
 }
-/*.wrapper
-{
-	margin-top: 50px;
-}*/
-/*=================================================
-||				3. Colors 
-==================================================*/
-/*=================================================
-||				4. Navigation 
-==================================================*/
+
 .custom-navbar-default {
   background-color: #8bc34a;
   border: 0px;
@@ -701,18 +598,6 @@ footer a:hover {
   }
 }
 
-/*@media (max-width: 960px){
-	.navbar-default .navbar-brand
-	{
-		font-size: 24px;
-	}
-	.header-sub-title {
-		font-size: 12px;
-	}
-}*/
-
-/*------------------------------  for extra-small (mobile) screen -------------------------*/
-
 @media (max-width: 767px) {
   .custom-navbar-default {
     padding: 15px 0px;
@@ -725,6 +610,7 @@ footer a:hover {
   .owl-carousel {
     margin-top: 80px;
   }
+
 
   .owl-carousel .owl-wrapper,
   .owl-carousel .owl-item:nth-child(1) .item,
@@ -828,7 +714,4 @@ footer a:hover {
     height: 137px;
   }
 
-  .btn-reservation {
-    padding: 10px;
-  }
 }
