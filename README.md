@@ -23,7 +23,7 @@
   - Run `npm install` on your terminal *be sure that you are in the project's directory*:
   `npm i`
   - Finally run a local server:
-  `npx webpack dev`
+  `npx webpack --watch`
   - If you want to deploy the project run: `npm run build`
   > Production-ready build files will be generate in the dist folder.
 
