@@ -21,14 +21,12 @@
   [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
   - Run `npm install` on your terminal *be sure that you are in the project's directory*:
-  `npm i`
-  - Finally run a local server:
-  `npx webpack --watch`
-  - If you want to deploy the project run: `npm run build`
-  > Production-ready build files will be generate in the dist folder.
+  - Next run: `yarn build`
+  - Finally run a local server in termanl with: `npm start` 
+  - The server will start automatically in the browser or open `localhost:3000/`
+### Live version
 
-
-
+[restopage](https://restopage.netlify.app/)
 ### Author
 
 👤 **Ngenzi Herve**
