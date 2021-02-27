@@ -23,7 +23,6 @@
   - Run `npm install` on your terminal *be sure that you are in the project's directory*:
   - Finally run a local server in termanl with: ` npm run start:dev`, the server will start automatically in the browser or open `localhost:8080/`
 ### Live version
- npm run start:dev
 [restopage](https://restopage.netlify.app/)
 ### Author
 
